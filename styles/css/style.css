@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  box-sizing: border-box; }
+
+html {
+  min-height: 100vh; }
+
+body {
+  display: flex; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background-color: aliceblue; }
+  header .searchbox {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 2px 6px;
+    margin-left: 34px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px; }
+  header input {
+    caret-color: var(--yt-spec-text-primary);
+    margin-left: 32px;
+    font-size: 16px; }
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100vh;
+  overflow-y: scroll; }
+  aside .start {
+    display: flex;
+    align-items: center; }
+    aside .start .options {
+      padding: 16px;
+      margin-right: 8px; }
+  aside .guide > li:nth-child(3) {
+    margin-bottom: 40px; }
+  aside .settings {
+    margin: 20px 0; }
+  aside .subscriptions {
+    font-size: 1.5rem;
+    padding: 20px; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; }
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: #898989;
+  cursor: pointer; }
+  .menu-item:hover {
+    background-color: #f0f0f0; }
+  .menu-item p {
+    font-size: 1.4rem; }
+  .menu-item img {
+    padding: 8px; }

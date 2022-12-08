@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background-color: aliceblue;
+
+  .searchbox {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 2px 6px;
+    margin-left: 34px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+  }
+
+  input {
+    caret-color: var(--yt-spec-text-primary);
+    margin-left: 32px;
+    font-size: 16px;
+  }
+}
