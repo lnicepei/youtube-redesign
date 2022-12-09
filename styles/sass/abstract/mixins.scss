@@ -1,11 +1,19 @@
-.menu-item {
+@mixin icon {
+  img {
+    padding: 8px;
+  }
+}
+
+@mixin menu-item {
+  @include icon;
+
   display: flex;
   align-items: center;
   width: 200px;
   height: 40px;
   padding: 0 12px;
   border-radius: 10px;
-  color: #898989;
+  color: $menu-item-color;
   cursor: pointer;
 
   &:hover {
@@ -14,9 +22,5 @@
 
   p {
     font-size: 1.4rem;
-  }
-
-  img {
-    padding: 8px;
   }
 }
