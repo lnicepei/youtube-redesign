@@ -4,7 +4,8 @@ aside {
   width: 200px;
   overflow-y: scroll;
 
-  li, .settings {
+  li,
+  .settings {
     @include menu-item;
   }
 
@@ -20,4 +21,6 @@ aside {
     font-size: 1.5rem;
     padding: 20px;
   }
+
+  @include responsive(display, none);
 }

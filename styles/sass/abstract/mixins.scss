@@ -24,3 +24,9 @@
     font-size: 1.4rem;
   }
 }
+
+@mixin responsive($property, $value) {
+  @media screen and (max-width: 500px) {
+    #{$property}: $value;
+  }
+}

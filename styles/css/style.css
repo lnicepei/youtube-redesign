@@ -147,6 +147,9 @@ header {
   header .start {
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 500px) {
+      header .start img:first-child {
+        display: none; } }
   header .center {
     display: flex;
     align-items: center;
@@ -154,7 +157,7 @@ header {
     padding: 2px 6px;
     margin-left: 34px; }
     header .center input {
-      width: 60%;
+      width: calc(clamp(30px, 60%, 500px));
       padding: 10px 15px;
       margin-left: 32px;
       border: none;
@@ -165,6 +168,12 @@ header {
       header .center input::placeholder {
         color: #30384c;
         opacity: 0.4; }
+      @media screen and (max-width: 500px) {
+        header .center input {
+          display: none; } }
+    @media screen and (max-width: 500px) {
+      header .center {
+        justify-content: flex-end; } }
   header .end {
     display: flex;
     justify-content: space-around;
@@ -173,13 +182,17 @@ header {
     header .end img {
       cursor: pointer;
       height: 45px; }
+      @media screen and (max-width: 500px) {
+        header .end img:first-child {
+          display: none; } }
 
 aside {
   display: flex;
   flex-direction: column;
   width: 200px;
   overflow-y: scroll; }
-  aside li, aside .settings {
+  aside li,
+  aside .settings {
     display: flex;
     align-items: center;
     width: 200px;
@@ -188,11 +201,14 @@ aside {
     border-radius: 10px;
     color: #898989;
     cursor: pointer; }
-    aside li img, aside .settings img {
+    aside li img,
+    aside .settings img {
       padding: 8px; }
-    aside li:hover, aside .settings:hover {
+    aside li:hover,
+    aside .settings:hover {
       background-color: #f0f0f0; }
-    aside li p, aside .settings p {
+    aside li p,
+    aside .settings p {
       font-size: 1.4rem; }
   aside .guide > li:nth-child(3) {
     margin-bottom: 40px; }
@@ -201,6 +217,9 @@ aside {
   aside .subscriptions {
     font-size: 1.5rem;
     padding: 20px; }
+  @media screen and (max-width: 500px) {
+    aside {
+      display: none; } }
 
 main {
   display: flex;

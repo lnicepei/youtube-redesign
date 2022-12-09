@@ -10,6 +10,10 @@ header {
   .start {
     display: flex;
     align-items: center;
+
+    img:first-child {
+      @include responsive(display, none);
+    }
   }
 
   .center {
@@ -20,7 +24,7 @@ header {
     margin-left: 34px;
 
     input {
-      width: 60%;
+      width: calc(clamp(30px, 60%, 500px));
       padding: 10px 15px;
       margin-left: 32px;
       border: none;
@@ -33,7 +37,11 @@ header {
         color: $search-placeholder-color;
         opacity: 0.4;
       }
+
+      @include responsive(display, none);
     }
+
+    @include responsive(justify-content, flex-end);
   }
 
   .end {
@@ -45,6 +53,10 @@ header {
     img {
       cursor: pointer;
       height: 45px;
+
+      &:first-child {
+        @include responsive(display, none);
+      }
     }
   }
 }
