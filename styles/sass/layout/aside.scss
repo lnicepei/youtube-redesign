@@ -1,8 +1,13 @@
 aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  margin-top: $header-height;
+  width: $aside-width;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   li,
   .settings {

@@ -1,0 +1,47 @@
+.content {
+  padding: 10px 0;
+  margin-left: $aside-width;
+
+  @include responsive(margin-left, 0);
+}
+
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100vw - #{$aside-width});
+
+  @include responsive(width, 100vw);
+  @include responsive(flex-direction, column);
+  @include responsive(flex-wrap, nowrap);
+
+  &.recommended {
+    img {
+      width: 520px;
+      @include responsive(width, 100%);
+    }
+  }
+
+  .content-section__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      display: flex;
+      align-items: flex-end;
+      color: $description-color;
+    }
+  }
+
+  .content-section__videos {
+    display: flex;
+    overflow-x: scroll;
+
+    @include responsive(flex-direction, column);
+  }
+}
