@@ -1,14 +1,13 @@
 .content {
-  padding: 10px 0;
-  margin-left: $aside-width;
-
-  @include responsive(margin-left, 0);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content-section {
   display: flex;
   flex-wrap: wrap;
-  width: calc(100vw - #{$aside-width});
 
   @include responsive(width, 100vw);
   @include responsive(flex-direction, column);
@@ -16,7 +15,8 @@
 
   &.recommended {
     img {
-      width: 520px;
+      width: calc(clamp(20vw, 40vw, 520px));
+
       @include responsive(width, 100%);
     }
   }

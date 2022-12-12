@@ -27,7 +27,8 @@
     margin-bottom: 5px;
 
     img {
-      width: 250px;
+      width: calc(clamp(10vw, 20vw, 250px));
+
       @include responsive(width, 100%);
     }
 

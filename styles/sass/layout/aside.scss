@@ -1,13 +1,12 @@
 aside {
-  position: fixed;
+  position: sticky;
   top: 0;
-  bottom: 0;
+  flex: 0 0 15%;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
-  margin-top: $header-height;
-  width: $aside-width;
+  height: calc(100vh - #{$header-height});
   overflow-y: scroll;
-  overflow-x: hidden;
 
   li,
   .settings {
@@ -27,5 +26,7 @@ aside {
     padding: 20px;
   }
 
-  @include responsive(display, none);
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
