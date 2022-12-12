@@ -23,14 +23,12 @@ header {
   .center {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex: 1;
-    padding: 2px 6px;
-    margin-left: 34px;
 
     input {
       width: calc(clamp(30px, 60%, 500px));
       padding: 10px 15px;
-      margin-left: 32px;
       border: none;
       outline: none;
       font-size: 16px;
