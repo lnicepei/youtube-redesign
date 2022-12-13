@@ -9,9 +9,9 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include responsive(width, 100vw);
-  @include responsive(flex-direction, column);
-  @include responsive(flex-wrap, nowrap);
+  @supports (scrollbar-width: thin) {
+    @include responsive(width, 98%);
+  }
 
   &.recommended {
     img {
@@ -41,6 +41,7 @@
   .content-section__videos {
     display: flex;
     overflow-x: scroll;
+    @include responsive(width, 100%);
 
     @include responsive(flex-direction, column);
   }

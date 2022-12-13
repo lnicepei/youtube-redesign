@@ -285,15 +285,10 @@ main {
 .content-section {
   display: flex;
   flex-wrap: wrap; }
-  @media screen and (max-width: 500px) {
-    .content-section {
-      width: 100vw; } }
-  @media screen and (max-width: 500px) {
-    .content-section {
-      flex-direction: column; } }
-  @media screen and (max-width: 500px) {
-    .content-section {
-      flex-wrap: nowrap; } }
+  @supports (scrollbar-width: thin) {
+    @media screen and (max-width: 500px) {
+      .content-section {
+        width: 98%; } } }
   .content-section.recommended img {
     width: calc(clamp(20vw, 40vw, 520px)); }
     @media screen and (max-width: 500px) {
@@ -313,6 +308,9 @@ main {
   .content-section .content-section__videos {
     display: flex;
     overflow-x: scroll; }
+    @media screen and (max-width: 500px) {
+      .content-section .content-section__videos {
+        width: 100%; } }
     @media screen and (max-width: 500px) {
       .content-section .content-section__videos {
         flex-direction: column; } }
