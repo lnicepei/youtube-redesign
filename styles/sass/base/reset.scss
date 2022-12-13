@@ -27,8 +27,11 @@ License: none (public domain)
   ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
   }
-}
 
+  @supports(scrollbar-width: thin){
+    scrollbar-width: thin;
+  }
+}
 
 html,
 body,
