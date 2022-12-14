@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
@@ -152,7 +152,7 @@ header {
   align-items: center;
   padding: 0 12px;
   height: 56px;
-  background-color: white;
+  background-color: #ffffff;
   z-index: 2; }
   header img {
     padding: 8px; }
@@ -197,12 +197,9 @@ header {
           display: none; } }
 
 aside {
-  position: sticky;
-  top: 0;
-  min-width: fit-content;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 56px);
+  min-width: fit-content;
   overflow-y: scroll; }
   aside li,
   aside .settings {
@@ -279,16 +276,11 @@ main {
 .content {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
   overflow-y: scroll; }
 
 .content-section {
   display: flex;
   flex-wrap: wrap; }
-  @supports (scrollbar-width: thin) {
-    @media screen and (max-width: 500px) {
-      .content-section {
-        width: 98%; } } }
   .content-section.recommended img {
     width: calc(clamp(20vw, 40vw, 520px)); }
     @media screen and (max-width: 500px) {

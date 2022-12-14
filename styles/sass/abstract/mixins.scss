@@ -17,7 +17,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #f0f0f0;
+    background-color: $menu-item-hover-bg-color;
   }
 
   p {

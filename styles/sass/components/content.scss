@@ -1,17 +1,12 @@
 .content {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .content-section {
   display: flex;
   flex-wrap: wrap;
-
-  @supports (scrollbar-width: thin) {
-    @include responsive(width, 98%);
-  }
 
   &.recommended {
     img {
